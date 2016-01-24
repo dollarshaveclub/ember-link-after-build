@@ -16,9 +16,26 @@ We reduced our initial build time from ~15 seconds to ~12 seconds, and subsequen
 
 ## Installation
 
+####Step 1
 
-1. In your ember project, run `npm install ember-link-after-build`
-2. In your `ember-cli-build.js` don't import the assets/images folder in the development envionrment
+Add `"ember-link-after-build": "^0.0.2"` to your package.json inside the dependencies hash file:
+
+
+```
+	//package.json
+	
+	dependencies: {
+	...
+	"ember-link-after-build": "^0.0.2",
+	...
+
+```
+
+####Step 2
+In your ember project, run `npm install`
+
+####Step 3
+In your `ember-cli-build.js` don't import the assets/images folder in the development envionrment
 
 Example:
 
