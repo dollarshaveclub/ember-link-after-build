@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/dollarshaveclub/ember-link-after-build.svg)](https://travis-ci.org/dollarshaveclub/ember-link-after-build)
+[![Ember Observer Score](http://emberobserver.com/badges/ember-link-after-build.svg)](http://emberobserver.com/addons/ember-link-after-build)
+
+
 # Ember-link-after-build
 
 ## General Information
@@ -21,35 +25,35 @@ Our images assets folder is 77 MB. By removing the copying step in the build tas
 ## How to Use / Configuration
 
 
-1. Add `"ember-link-after-build": "^1.0.0"` to your package.json inside the dependencies hash file:
+1. Add `"ember-link-after-build": "^1.0.1"` to your package.json inside the dependencies hash file:
 
-	
+
 	```
 	//package.json
-	
+
 	dependencies: {
 	...
-	"ember-link-after-build": "^1.0.0",
+	"ember-link-after-build": "^1.0.1",
 	...
-	
+
 	```
 
 2. In your ember project, run `npm install`
 
 3. By default, it will symlink the `assets/images` folder when running in development mode. You can override the configuration by adding `link-after-build.js` in the `config` folder of your ember project.
-4. 
+4.
 	```
 	module.exports = {
 	  environments: [ "development" ],
 	  assetPaths: [ "asset/images" ]
 	};
-	
+
 	```
 
 4. In your `ember-cli-build.js` don't import the src folder in the target environment.
-	
+
 	Example:
-	
+
 	```
 	// Images.
 	  if (ENV !== 'development') {
@@ -58,11 +62,7 @@ Our images assets folder is 77 MB. By removing the copying step in the build tas
 	  include: ['**/*'],
 	  destDir: '/assets/images'
 	  });
-	
+
 	  output.push( images );
 	}
 	```
-	
-
-
-

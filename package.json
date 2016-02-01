@@ -1,6 +1,6 @@
 {
   "name": "ember-link-after-build",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Symlink a folder in lieu of copying files for faster build times",
   "directories": {
     "doc": "doc",
@@ -37,6 +37,7 @@
     "ember-export-application-global": "^1.0.4",
     "ember-disable-prototype-extensions": "^1.0.0",
     "ember-try": "~0.0.8",
+    "glob": "^4.0.5",
     "mocha": "^2.1.0",
     "mocha-jshint": "0.0.9"
   },
