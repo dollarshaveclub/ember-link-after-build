@@ -4,6 +4,8 @@
 
 # Ember-link-after-build
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/dollarshaveclub/ember-link-after-build.svg)](https://greenkeeper.io/)
+
 ## General Information
 
 ### What is ember-link-after-build?
